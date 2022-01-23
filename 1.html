@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoster World</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <a herf='index.html'>Hostel World</a>
+            </div>
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a herf="#">Home</a></li>
+                    <li><button class='Aboutusbtn' onclick="document.getElementById(Aboutus).style.display='block'" style="width:auto;"><a herf="file:///C:/Users/sharanya/Desktop/DT/about%20us.html">About Us</a></li>
+                    <li><a herf="#">Services</a></li>
+                    <li><a herf="#">Contact</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">login</button>
+                    </li>
+                </ul>
+            </nav>
+        
+        </div>
+        <div class="card-group">
+            <div class="card shadow mt-5 m-2">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSUJuL0cRDxKhF_CgxT8hWsFxP3JqpzffbYg&usqp=CAU" alt="" class="center" width="10px" height="200px">
+    <div class="card-body">
+        <h5 class="text-center phy">Kompally</h5>
+        <ul>
+            <li>Maintain at least metre distance to reduce your risk of infection when they cough, sneeze or speak. </li>
+            <li>Maintain indoors. The further away, the better.</li>
+        </ul>
+    </div>
+    <div class="card-footer">
+        <button class="btn btn-primary btn-sm d-block mx-auto">Know More...</button>
+    </div>
+</div>
+<div class="card-group">
+    <div class="card shadow mt-5 m-2">
+<img src="elevation-1.jpg" alt="" class="center" width="10px">
+<div class="card-body">
+<h5 class="text-center phy">Nizampet</h5>
+<ul>
+    <li>Maintain at least metre distance to reduce your risk of infection when they cough, sneeze or speak. </li>
+    <li>Maintain indoors. The further away, the better.</li>
+</ul>
+</div>
+<div class="card-footer">
+<button class="btn btn-primary btn-sm d-block mx-auto">Know More...</button>
+</div>
+</div>
+<div class="card-group">
+    <div class="card shadow mt-5 m-2">
+<img src="location1-02.jpg" alt="" class="center" width="10px">
+<div class="card-body">
+<h5 class="text-center phy">JNTUH</h5>
+<ul>
+    <li>Maintain at least metre distance to reduce your risk of infection when they cough, sneeze or speak. </li>
+    <li>Maintain indoors. The further away, the better.</li>
+</ul>
+</div>
+<div class="card-footer">
+<button class="btn btn-primary btn-sm d-block mx-auto">Know More...</button>
+</div>
+</div>
+            
+            
+        <div class="center">
+            <h1>Find Your Own Way</h1>
+            <div class="buttons">
+                <button>Explore More</button>
+                <button class="btn">Subsribe Us</button>
+            </div>
+        </div>
+        <div id='Aboutusbtn'></div>
+        <p><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></p>
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>    
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text'class='input-field'placeholder='Email Id'required>
+                    <input type='password'class='input-field'placeholder='Password'required>
+                    <input type='checkbox'class='check-box'><span>Remember Password</span>
+                    <button type='submit'class='submit-btn'>Log In</button>
+
+
+                </form>
+                <form id='register' class='input-group-register'>
+                    <input type='text'class='input-field'placeholder='First Name'required>
+                    <input type='text'class='input-field'placeholder='Last Name'required>
+                    <input type='email'class='input-field'placeholder='Email Id'required>
+                    <input type='password'class='input-field'placeholder='Enter Password'required>
+                    <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+                    <button type='submit'class='submit-btn'>Register</button>
+
+                </form>
+                
+            </div>
+        </div>
+        
+    </div>
+    
+    <script>
+        var x=document.getElementById('login');
+        var y=document.getElementById('register');
+        var z=document.getElementById('btn');
+        function register()
+        {
+            x.style.left='-400px';
+            y.style.left='50px';
+            z.style.left='110px';
+        }
+        function login()
+        {
+            x.style.left='50px';
+            y.style.left='450px';
+            z.style.left='0px';
+        }
+    </script>
+    <script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event)
+        {
+            if (event.target == modal)
+            {
+                modal.style.display ="none";
+            }
+        }
+    </script>
+</body>
+</html>
